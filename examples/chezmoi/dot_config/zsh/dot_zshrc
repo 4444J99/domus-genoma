@@ -1,0 +1,22 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# ZSH Configuration - Managed by Chezmoi
+# ─────────────────────────────────────────────────────────────────────────────
+# Modular configuration loaded from ~/.config/zsh/
+#
+# Structure:
+#   00-init.zsh       - Startup timing, guards
+#   10-path.zsh       - PATH configuration
+#   15-env.zsh        - Environment variables
+#   20-tools.zsh      - Tool initializations
+#   30-aliases.zsh    - All aliases
+#   40-functions.zsh  - Custom functions
+#   50-completions.zsh - Completion setup
+#   90-telemetry.zsh  - Domus telemetry (end)
+#   99-local.zsh      - Machine-specific (optional)
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Load all zsh config modules in order
+for config_file in ${ZDOTDIR:-$HOME/.config/zsh}/[0-9]*.zsh(N); do
+  source "$config_file"
+done
+unset config_file

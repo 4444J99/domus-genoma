@@ -1,0 +1,27 @@
+schema_version: 0.1
+source_repo: 4444J99/domus-genoma-private
+source_repository_id: 1124448005
+source_commit: 124bc2fd4d61a141e388baa8c7c5450b564ffcdd
+extracted: '2026-10-12'
+paths:
+  - README.md
+  - LICENSE
+  - .chezmoiignore
+  - .gitignore
+  - docs/architecture.md
+  - docs/public-private-boundary.md
+  - examples/chezmoi/README.md
+  - examples/chezmoi/dot_editorconfig
+  - examples/chezmoi/dot_zshenv
+  - examples/chezmoi/dot_config/zsh/00-init.zsh
+  - examples/chezmoi/dot_config/zsh/01-history.zsh
+  - examples/chezmoi/dot_config/zsh/dot_zshrc
+  - tools/check_public.py
+exact_sources:
+  LICENSE: LICENSE
+  examples/chezmoi/dot_editorconfig: dot_editorconfig
+  examples/chezmoi/dot_config/zsh/00-init.zsh: dot_config/zsh/00-init.zsh
+  examples/chezmoi/dot_config/zsh/dot_zshrc: dot_config/zsh/dot_zshrc
+adapted_sources:
+  examples/chezmoi/dot_zshenv: dot_zshenv.tmpl
+  examples/chezmoi/dot_config/zsh/01-history.zsh: dot_config/zsh/01-history.zsh
