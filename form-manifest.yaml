@@ -4,6 +4,7 @@ source_repository_id: 1124448005
 source_commit: 124bc2fd4d61a141e388baa8c7c5450b564ffcdd
 extracted: '2026-10-12'
 paths:
+  - .github/workflows/public-ci.yml
   - README.md
   - LICENSE
   - .chezmoiignore

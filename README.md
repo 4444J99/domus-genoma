@@ -27,6 +27,11 @@ reviewed for extraction. This is a curated initial public edition.
 ## Verify
 
 Run `python3 tools/check_public.py` to check the file allowlist and sample shell syntax.
+The `Public CI` workflow runs this check for public pull requests and pushes to
+`main` using a standard GitHub-hosted runner. It checks out only this public
+repository and needs no private repository credentials. Its result applies to this
+curated edition; private installation checks remain a separate responsibility.
+
 The publication process also scans secrets and checks that public Git history is
 disjoint from the private source. Every later extraction must repeat those checks.
 
