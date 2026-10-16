@@ -7,6 +7,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = {
     "README.md", "LICENSE", ".chezmoiignore", ".gitignore", "form-manifest.yaml",
+    ".github/workflows/public-ci.yml",
     "docs/architecture.md", "docs/public-private-boundary.md",
     "examples/chezmoi/README.md", "examples/chezmoi/dot_editorconfig",
     "examples/chezmoi/dot_zshenv", "examples/chezmoi/dot_config/zsh/00-init.zsh",
